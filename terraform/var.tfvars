@@ -1,5 +1,5 @@
 resource_group_name = "rg-test-app"
-location = "west-europe"
+location = "westeurope"
 storage_account_name = "mystorxrytest"
 subnetname = "mytestsub"
 virtual_network_name = "test-vnet"
