@@ -51,7 +51,7 @@
 
 # .github/workflows/deploy.yml
 
-name: 'Terraform Deploy to Azure'
+name: 'Terraform Main Deploy to Azure'
 
 on:
 #   push:
