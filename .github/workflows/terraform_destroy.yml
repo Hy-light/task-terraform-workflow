@@ -34,7 +34,7 @@
 
       # .github/workflows/deploy.yml
 
-name: 'Terraform Main Deploy to Azure'
+name: 'Terraform Main Destroy to Azure'
 
 on:
   workflow_dispatch:
