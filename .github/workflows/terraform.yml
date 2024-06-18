@@ -42,7 +42,9 @@ jobs:
 
     - name: Terraform Plan
       run: terraform plan -var-file="var.tfvars"
+      working-directory: ./terraform
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'  # Only apply on main branch
       run: terraform apply -var-file="var.tfvars" -auto-approve
+      working-directory: ./terraform
