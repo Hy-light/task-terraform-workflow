@@ -21,3 +21,22 @@ variable "virtual_network_name" {
 variable "storage_account_name" {
   description = "the name of the storage account"
 }
+
+
+# ./terraform/variables.tf
+
+variable "client_id" {
+  type = string
+}
+
+variable "client_secret" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+}
+
+variable "subscription_id" {
+  type = string
+}
