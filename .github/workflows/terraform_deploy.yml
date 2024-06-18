@@ -88,6 +88,12 @@ jobs:
           -backend-config="tenant_id=${{ secrets.AZURE_TENANT_ID }}" \
           -backend-config="subscription_id=${{ secrets.AZURE_SUBSCRIPTION_ID }}"
       working-directory: ./terraform
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
 
     - name: Terraform Plan
       run: terraform plan -var-file="var.tfvars"
